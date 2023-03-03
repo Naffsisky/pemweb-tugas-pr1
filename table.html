@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Data Pendaftar</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img style="width: 50px" src="img/logo/logoupnbaru.png" /> </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="form.html">Form</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="table.html">Data Pendaftar</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <h2 style="text-align: center" class="my-5">DATA MAHASISWA</h2>
+    <br />
+    <!-- TABLE -->
+    <div class="container-md table-responsive">
+      <table class="table table-striped table-hover" style="text-align: center">
+        <thead>
+          <tr>
+            <th scope="col">No.</th>
+            <th scope="col">Nama</th>
+            <th scope="col">NPM</th>
+            <th scope="col">Alamat</th>
+            <th scope="col">Tanggal Lahir</th>
+            <th scope="col">Jenis Kelamin</th>
+            <th scope="col">Agama</th>
+            <th scope="col">Email</th>
+            <th scope="col">Foto</th>
+            <th scope="col">Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Prinafsika</td>
+            <td>21081010278</td>
+            <td>Rungkut Geming</td>
+            <td>03-03-2023</td>
+            <td>Laki-laki</td>
+            <td>Islam</td>
+            <td>naffsvn@protonmail.com</td>
+            <td>prinaf.jpg</td>
+            <td>
+              <a href="#" class="btn btn-primary">Edit</a>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Ahmad Dhany</td>
+            <td>21081010190</td>
+            <td>Luki Kost Geming</td>
+            <td>17-07-2077</td>
+            <td>Laki-laki</td>
+            <td>Islam</td>
+            <td>daniel@yahoo.com</td>
+            <td>dhany.jpg</td>
+            <td>
+              <button href="#" class="btn btn-primary">Edit</button>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Naruto Uzumaki</td>
+            <td>11011010000</td>
+            <td>Konoha gakure</td>
+            <td>10-10-2010</td>
+            <td>Laki-laki</td>
+            <td>Budha</td>
+            <td>naruto@naruto.kg</td>
+            <td>naruto.jpg</td>
+            <td>
+              <button href="#" class="btn btn-primary">Edit</button>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Sasuke Uchiha</td>
+            <td>22022020000</td>
+            <td>Konoha gakure</td>
+            <td>23-07-2010</td>
+            <td>Laki-laki</td>
+            <td>Budha</td>
+            <td>sasuke@naruto.kg</td>
+            <td>sasuke.jpg</td>
+            <td>
+              <button href="#" class="btn btn-primary">Edit</button>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- END TABLE -->
+    <!-- MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Perhatian!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">Apakah anda yakin ingin menghapus ini?</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            <button type="button" class="btn btn-danger">Hapus!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END MODAL -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

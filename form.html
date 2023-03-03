@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img style="width: 50px" src="img/logo/logoupnbaru.png" /> </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="form.html">Form</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="table.html">Data Pendaftar</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <h2 class="text-center my-4">FORM IDENTITAS</h2>
+    <form class="container w-50 p-4">
+      <!-- input nama -->
+      <div class="mb-3">
+        <label for="nama" class="form-label">Nama</label>
+        <input type="text" class="form-control" id="formNama" aria-describedby="formNama" placeholder="Masukan nama" required />
+      </div>
+      <!-- END input nama -->
+      <!-- input npm -->
+      <div class="mb-3">
+        <label for="npm" class="form-label">NPM</label>
+        <input type="number" step="1" pattern="^[-/d]/d*$" class="form-control" id="formNPM" aria-describedby="formNPM" placeholder="Masukan NPM" required />
+      </div>
+      <!-- END input npm -->
+      <!-- input alamat -->
+      <div class="mb-3">
+        <label for="alamat" class="form-label">Alamat</label>
+        <input type="text" class="form-control" id="formAlamat" aria-describedby="formAlamat" placeholder="Masukan Alamat" required />
+      </div>
+      <!-- END input alamat -->
+      <!-- input tanggal lahir -->
+      <div class="mb-3">
+        <label for="tgl-lahir" class="form-label">Tanggal Lahir</label>
+        <input type="date" class="form-control" id="formTgl-lahir" aria-describedby="formTgl-lahir" required />
+      </div>
+      <!-- END input tanggal lahir -->
+      <!-- input jenis kelamin -->
+      <div class="mb-3">
+        <label for="jk" class="form-label">Jenis Kelamin</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required />
+          <label class="form-check-label" for="flexRadioDefault1"> Laki-laki </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" required />
+          <label class="form-check-label" for="flexRadioDefault2"> Perempuan </label>
+        </div>
+      </div>
+      <!-- END input jenis kelamin -->
+      <!-- input agama -->
+      <div class="mb-3">
+        <label for="agama" class="form-label">Agama</label>
+        <select class="form-select" aria-label="Default select example" required>
+          <option selected>Pilih Agama</option>
+          <option value="1">Islam</option>
+          <option value="2">Kristen</option>
+          <option value="3">Hindu</option>
+          <option value="4">Budha</option>
+          <option value="5">Konghucu</option>
+        </select>
+      </div>
+      <!-- END input agama -->
+      <!-- input email -->
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ex. abc@mail.com" />
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <!-- END input email -->
+      <!-- input gambar -->
+      <div class="mb-3">
+        <label for="formFile" class="form-label">Upload Foto</label>
+        <input class="form-control" type="file" id="formFile" required />
+      </div>
+      <!-- END input gambar -->
+      <!-- input password-->
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Please use UNIX pass" required />
+        <div class="col-auto">
+          <span id="passwordHelpInline" class="form-text"> Must be 8-20 characters long. </span>
+        </div>
+      </div>
+      <!-- END input password-->
+      <div class="mb-3">
+        <label for="exampleInputPassword2" class="form-label">Verify Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Please use UNIX pass" required />
+      </div>
+      <!-- term -->
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" required />
+        <label class="form-check-label" for="exampleCheck1">Saya terima kesepakatan</label> <a style="text-decoration: none; color: rgb(24, 178, 198)" href="index.html">ini</a>
+      </div>
+      <!-- END term -->
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

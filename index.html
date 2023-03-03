@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img style="width: 50px" src="img/logo/logoupnbaru.png" /> </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="form.html">Form</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="table.html">Data Pendaftar</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <!-- CAROUSEL -->
+    <div class="container-lg my-3">
+      <div id="image" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#image" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#image" data-bs-slide-to="1"></li>
+          <li data-bs-target="#image" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item" class="img-fluid">
+            <img src="img/bg/bg1.jpg" class="d-block w-100 c-img" alt="Slide 1" />
+          </div>
+          <div class="carousel-item c-item" class="img-fluid">
+            <img src="img/bg/nighttokyo.jpg" class="d-block w-100 c-img" alt="Slide 2" />
+          </div>
+          <div class="carousel-item c-item" class="img-fluid">
+            <img src="img/bg/bg2.jpg" class="d-block w-100 c-img" alt="Slide 3" />
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#image" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#image" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+    <!-- END CAROUSEL -->
+    <div class="container my-5">
+      <h1 class="text-center"><i class="fa-light fa-font">NEWS</i></h1>
+      <!-- CARD -->
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img style="height: 72%" src="img/car/haru.png" class="card-img-top" alt="imageHaruka" />
+            <div class="card-body">
+              <h5 class="card-title">Haruka</h5>
+              <p class="card-text"><i>I told you I'd keep my promise. Remember yea boys!</i></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img style="height: 72%" src="img/car/rin.jpg" class="card-img-top" alt="imageRin" />
+            <div class="card-body">
+              <h5 class="card-title">Matsouka Rin</h5>
+              <p class="card-text"><i>Gotta keep moving forward, far beyond the horizon.</i></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 5 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img style="height: 72%" src="img/car/ikuya.jpg" class="card-img-top" alt="imageIkuya" />
+            <div class="card-body">
+              <h5 class="card-title">Kirishima Ikuya</h5>
+              <p class="card-text"><i>In the water I'm alone, no one's gonna save me. That won't change.</i></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 7 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END CARD -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  <footer>
+    <p>Copyright @2023</p>
+    <p><a style="color: black; text-decoration: none" href="mailto:example@gmail.com">Email : example@gmail.com</a></p>
+  </footer>
+</html>
